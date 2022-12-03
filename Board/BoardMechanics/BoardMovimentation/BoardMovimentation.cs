@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class BoardMovimentation : BoardMechanic
 {
-    public override bool CheckIfTargetIsValid (BoardObject object) {
+    public override bool CheckIfTargetIsValid (BoardObject var1) {
         return false;
     }
 

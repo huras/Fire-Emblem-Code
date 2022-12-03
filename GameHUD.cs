@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameHUD : MonoBehaviour
+public abstract class GameHUD : MonoBehaviour
 {
-    public abstract void GameHUDUpdate(){
-        
-    }
+    public abstract void GameHUDUpdate();
 }

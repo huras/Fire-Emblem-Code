@@ -4,19 +4,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoardMechanic : MonoBehaviour
+public abstract class BoardMechanic : MonoBehaviour
 {
     // trade
     // attack
     // skill
 
-    public abstract bool CheckIfTargetIsValid (BoardObject object) {
-        return false;
-    }
+    public abstract bool CheckIfTargetIsValid (BoardObject objeto);
 
     public BoardObject targetObject;
-    public void SetTarget (BoardObject object) {
-        targetObject = object;
+    public void SetTarget (BoardObject objeto) {
+        targetObject = objeto;
     }
 
     public List<BoardObject> targetObjects;
@@ -24,25 +22,19 @@ public class BoardMechanic : MonoBehaviour
         targetObjects = objects;
     }
 
-    public abstract bool MayStart () {
-        return false;
-    }
+    public abstract bool MayStart ();
 
-    public abstract void SetUp () {
-    }
+    public abstract void SetUp ();
 
     public void Start () {
         SetUp();
     }
 
-    public abstract void Evolve () {
-
-    }
+    public abstract void Evolve ();
 
     public void Finish () {
         CleanUp();
     }
 
-    public abstract  void CleanUp () {
-    }
+    public abstract  void CleanUp ();
 }

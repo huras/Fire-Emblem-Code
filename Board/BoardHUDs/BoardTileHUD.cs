@@ -6,5 +6,7 @@ using UnityEngine.UI;
 
 public class BoardTileHUD : GameHUD
 {
-    
+    public override void GameHUDUpdate(){
+
+    }
 }

@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BoardTradeHUD : GameHUD
+public class BoardUnitActionSelectHUD : GameHUD
 {
-    
+    public override void GameHUDUpdate(){
+
+    }
 }
