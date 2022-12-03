@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameHUD : MonoBehaviour
+public class SaveFile
 {
-    public abstract void GameHUDUpdate(){
-        
-    }
+    
 }
